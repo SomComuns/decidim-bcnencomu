@@ -129,17 +129,26 @@ $(function () {
       return true;
     }
 
-    if(!HAS_SUPLENTS) return true;
-
     updateCounters();
 
-    if(candidats > 0) {
-      alert('Encara et falten votar ' + candidats + ' candidats');
-      return false;
-    }
-    else if(suplents > 0) {
-      alert('Encara et falten votar ' + suplents + ' suplents');
-      return false;
+    if(HAS_SUPLENTS) {
+      // With substitutes: validate regular candidates and substitutes separately
+      if(candidats > 0) {
+        alert('Encara et falten votar ' + candidats + ' candidats');
+        return false;
+      }
+      else if(suplents > 0) {
+        alert('Encara et falten votar ' + suplents + ' suplents');
+        return false;
+      }
+    } else {
+      // Without substitutes: validate that all votes are cast
+      var totalVotes = MAX_VOTES - candidats;
+      if(totalVotes < MAX_VOTES) {
+        var votesLeft = MAX_VOTES - totalVotes;
+        alert('Has de votar exactament ' + MAX_VOTES + ' opcions. Et falten ' + votesLeft + ' vots.');
+        return false;
+      }
     }
   });
 });

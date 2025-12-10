@@ -10,24 +10,26 @@
   </div>
 
   <div class="card-section">
-    <strong>FUNCIONAMENT</strong>:
+    <strong>CONFIGURACIÓ DE VOTACIÓ</strong>:
     <ul>
-      <li>Es pot configurar una votació amb suplents o sense. Si hi ha suplents el nombre mínm de vots es farà servir per indicar el número de mínim de suplents que s'han de votar</li>
-      <li>Per configurar una votació amb suplents simplement afegiu la paraula <strong>suplent</strong> o <strong>suplente</strong> entre parèntesis o guions al candidat (exemple: <code>Candidat&nbsp;X&nbsp;-suplent-</code>)</li>
-      <li>Si voleu permetre vots en blanc heu d'afegir específicament la opció afegint la paraula <strong>blanc</strong> o <strong>blanco</strong> entre parèntesis o guions a la opció (exemple: <code>-en&nbsp;blanc-</code>)</li>
-    </ul>
-    <strong>NOTES</strong>:
-    <ul>
-      <li>El máxim ha d'incloure els suplents + els càrrecs.</li>
-      <li>El mínim de vots està configurat internament a <strong>1</strong> per tenir en compte llistes individuals</li>
-      <li>El sistema no deixarà votar en els seguents casos:
+      <li><strong>Màxim de vots</strong>: Nombre màxim d'opcions que es poden votar</li>
+      <li><strong>Mínim de vots</strong>:
         <ul>
-          <li>Que s'intenti votar en blanc i una altra opció alhora</li>
-          <li>Que no s'exaureixin el numero màxim de vots si no s'ha triat un grup</li>
-          <li>Si n'hi ha, que el numero de suplents sigui inferior al configurat</li>
-          <li>Si no hi ha suplents, que el numero de vots sigui inferior al configurat</li>
+          <li>Si hi ha <strong>suplents</strong>: indica el nombre de suplents obligatoris. Els titulars es calculen com <code>màxim - mínim</code></li>
+          <li>Si <strong>NO hi ha suplents</strong>: indica el mínim d'opcions a votar. Si <code>mínim = màxim</code>, s'obligarà a votar exactament aquest nombre</li>
         </ul>
       </li>
+    </ul>
+    <strong>DETECCIÓ AUTOMÀTICA</strong>:
+    <ul>
+      <li><strong>Suplents</strong>: Afegiu la paraula <code>suplent</code> o <code>suplente</code> entre parèntesis o guions al nom del candidat (exemple: <code>Nom Cognoms -suplent-</code>)</li>
+      <li><strong>Vot en blanc</strong>: Afegiu l'opció amb la paraula <code>blanc</code> o <code>blanco</code> entre parèntesis o guions (exemple: <code>-en blanc-</code>)</li>
+    </ul>
+    <strong>VALIDACIONS</strong>:
+    <ul>
+      <li>No es pot votar en blanc i altres opcions alhora</li>
+      <li>Amb suplents: s'ha de votar exactament el nombre de titulars i suplents configurat</li>
+      <li>Sense suplents: s'ha de votar dins el rang <code>[mínim, màxim]</code></li>
     </ul>
 
   </div>

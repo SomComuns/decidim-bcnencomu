@@ -92,7 +92,13 @@ Rails.application.config.to_prepare do
   # /app/models/decidim/consultations/response_group.rb
   Decidim::Consultations::ResponseGroup.class_eval do
     def complete_list?
-      question.max_votes == responses.count && question.min_votes == suplents.count
+      # If there are substitutes, validate they match min_votes
+      if question.has_suplents?
+        question.max_votes == responses.count && question.min_votes == suplents.count
+      else
+        # If no substitutes, only validate all responses in the group are voted
+        question.max_votes == responses.count
+      end
     end
 
     def suplents
