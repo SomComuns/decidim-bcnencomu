@@ -54,3 +54,6 @@ yarn-debug.log*
 .yarn-integrity
 
 .idea/
+
+# Ignore Tailwind configuration
+tailwind.config.js
