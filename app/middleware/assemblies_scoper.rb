@@ -55,7 +55,8 @@ class AssembliesScoper
 
   def out_of_scope?
     return true if @types.blank?
-    return true if @parts[2] && @current_assembly.blank?
+
+    true if @parts[2] && @current_assembly.blank?
   end
 
   def types

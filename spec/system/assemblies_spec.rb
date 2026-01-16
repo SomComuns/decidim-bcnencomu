@@ -2,10 +2,10 @@
 
 require "rails_helper"
 
-describe "Visit assemblies", type: :system do
-  let(:organization) { create :organization }
-  let!(:organs) { create :assemblies_type, id: 17 }
-  let!(:type2) { create :assemblies_type }
+describe "Visit_assemblies" do
+  let(:organization) { create(:organization) }
+  let!(:organs) { create(:assemblies_type, id: 17) }
+  let!(:type2) { create(:assemblies_type) }
   let!(:alternative_assembly) { create(:assembly, slug: "slug1", assembly_type: organs, organization: organization) }
   let!(:assembly) { create(:assembly, slug: "slug3", assembly_type: nil, organization: organization) }
   let!(:assembly2) { create(:assembly, slug: "slug2", assembly_type: type2, organization: organization) }
@@ -55,7 +55,7 @@ describe "Visit assemblies", type: :system do
 
       it "shows assemblies without excluded types" do
         within "#parent-assemblies" do
-          expect(page).not_to have_content(alternative_assembly.title["ca"])
+          expect(page).to have_no_content(alternative_assembly.title["ca"])
           expect(page).to have_content(assembly2.title["ca"])
           expect(page).to have_content(assembly.title["ca"])
         end
@@ -76,8 +76,8 @@ describe "Visit assemblies", type: :system do
       it "shows assemblies without excluded types" do
         within "#parent-assemblies" do
           expect(page).to have_content(alternative_assembly.title["ca"])
-          expect(page).not_to have_content(assembly2.title["ca"])
-          expect(page).not_to have_content(assembly.title["ca"])
+          expect(page).to have_no_content(assembly2.title["ca"])
+          expect(page).to have_no_content(assembly.title["ca"])
         end
       end
 

@@ -6,8 +6,8 @@ module Decidim
   describe Assembly do
     subject { assembly }
 
-    let(:type1) { create :assemblies_type }
-    let(:type2) { create :assemblies_type }
+    let(:type1) { create(:assemblies_type) }
+    let(:type2) { create(:assemblies_type) }
     let!(:assembly1) { create(:assembly, slug: "slug1", assembly_type: type1) }
     let!(:assembly2) { create(:assembly, slug: "slug2", assembly_type: type2) }
     let!(:assembly3) { create(:assembly, slug: "slug3", assembly_type: nil) }

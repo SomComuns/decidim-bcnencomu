@@ -7,9 +7,9 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.31-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
-gem "decidim-elections", DECIDIM_VERSION
 gem "decidim-civicrm", github: "openpoke/decidim-module-civicrm", branch: "release/0.31-stable"
 gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "release/0.31-stable"
+gem "decidim-elections", DECIDIM_VERSION
 gem "decidim-pokecode", github: "openpoke/decidim-module-pokecode", branch: "release/0.31-stable"
 gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.31-stable"
 # gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", tag: "v1.3.0"
@@ -23,8 +23,8 @@ gem "uglifier", "~> 4.1"
 gem "image_processing", ">= 1.2"
 
 group :development, :test do
-  gem "byebug", "~> 11.0", platform: :mri
   gem "brakeman", "~> 6.1"
+  gem "byebug", "~> 11.0", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
 end
 

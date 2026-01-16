@@ -27,38 +27,6 @@ checksums = [
     }
   },
   {
-    package: "decidim-consultations",
-    files: {
-      # views
-      "/app/views/decidim/consultations/admin/consultations/results.html.erb" => "1a2f7afd79b20b1fcf66bdece660e8ae",
-      "/app/views/decidim/consultations/admin/questions/_form.html.erb" => "1eb11e33f7ffa2739d1c11ff9ab6dff4",
-      "/app/views/decidim/consultations/admin/question_configuration/_form.html.erb" => "e1ab4e8e5cc988f60f2bfe5e4be0a9f4",
-      "/app/views/decidim/consultations/admin/responses/_form.html.erb" => "6846d66395457acdd7d6ec839a49b0ec",
-      "/app/views/decidim/consultations/consultations/_question.html.erb" => "2d02835e2a1538cd7f6db698e302a29b",
-      "/app/views/decidim/consultations/consultations/_regular_questions.html.erb" => "0c5093e02db04da679d92415e2abd937",
-      "/app/views/decidim/consultations/consultations/show.html.erb" => "84a1569b796f724efa304b9dfc40f68a",
-      "/app/views/decidim/consultations/question_multiple_votes/_form.html.erb" => "af610283ce7ee20f5ef786228a263d4a",
-      "/app/views/decidim/consultations/question_multiple_votes/_voting_rules.html.erb" => "9bc6f3b47e2e850ecaf33df56988d437",
-      "/app/views/decidim/consultations/questions/_results.html.erb" => "2d8196efbf23e2ad7b8c32713c28b240",
-      "/app/views/decidim/consultations/questions/_vote_button.html.erb" => "7f3516e6d13cc4a1a9c0894b9d9fb808",
-      "/app/views/decidim/consultations/questions/_vote_modal.html.erb" => "bb4b10e9278cffd8d0d4eb57f5197a89",
-      "/app/views/decidim/consultations/questions/show.html.erb" => "a01add938f39d496ca7ae9beee9f6945",
-      # forms
-      "/app/forms/decidim/consultations/admin/question_form.rb" => "ec32922ff3c79bd5e808208f25946ba2",
-      # commands
-      "/app/commands/decidim/consultations/admin/create_question.rb" => "9837cbac4b972db8f9c6327b91fdadd0",
-      "/app/commands/decidim/consultations/admin/update_question.rb" => "bd54eb7e7ebc06be78b14684d05baa6d",
-      # assets
-      "/app/packs/src/decidim/consultations/utils_multiple.js" => "8ee3b5bfa77b98f9a953357a54770284",
-      # classes in initializers/custom_consultations.rb
-      "/app/helpers/decidim/consultations/questions_helper.rb" => "77f47837e3ea973fa85c498400948678",
-      "/app/models/decidim/consultations/response.rb" => "e841b88f8e2d70577222be2a97cba442",
-      "/app/models/decidim/consultations/question.rb" => "bc6e8618100f112c1d23bee9aaf5c0ed",
-      "/app/controllers/decidim/consultations/admin/responses_controller.rb" => "b8a63f442dd146f1ea3596d485ea29f7",
-      "/app/forms/decidim/consultations/multi_vote_form.rb" => "fc2160f0b5e85c9944d652b568c800f3"
-    }
-  },
-  {
     package: "decidim-assemblies",
     files: {
       # just to take into the account if some routes change
@@ -74,26 +42,24 @@ checksums = [
     files: {
       "/app/controllers/decidim/meetings/meetings_controller.rb" => "c4b88c68ea8b5653c6f1e35cd2646011"
     }
-  },
-  {
-    package: "decidim-direct_verifications",
-    files: {
-      # The only change for controllers is the full namespace for the parent class as it didn't resolved it well when it
-      # was just ApplicationController
-      "/app/controllers/decidim/direct_verifications/verification/admin/authorizations_controller.rb" => "5b713aa72da2ba5e4f0fefa840816004",
-      "/app/controllers/decidim/direct_verifications/verification/admin/direct_verifications_controller.rb" => "4f9cef25f72bb5ce88480850bd3f162a",
-      "/app/controllers/decidim/direct_verifications/verification/admin/imports_controller.rb" => "477a63f3c749de204ccdc0987cd6b20d",
-      "/app/controllers/decidim/direct_verifications/verification/admin/stats_controller.rb" => "a0c4ae48b1372ea5d37aae0112c9c826",
-      "/app/controllers/decidim/direct_verifications/verification/admin/user_authorizations_controller.rb" => "c0f3387a8b76ecdf238e12e6c03daf3e"
-    }
-  }
+  } # ,
+  # {
+  #   package: "decidim-direct_verifications",
+  #   files: {
+  #     # The only change for controllers is the full namespace for the parent class as it didn't resolved it well when it
+  #     # was just ApplicationController
+  #     "/app/controllers/decidim/direct_verifications/verification/admin/authorizations_controller.rb" => "5b713aa72da2ba5e4f0fefa840816004",
+  #     "/app/controllers/decidim/direct_verifications/verification/admin/direct_verifications_controller.rb" => "4f9cef25f72bb5ce88480850bd3f162a",
+  #     "/app/controllers/decidim/direct_verifications/verification/admin/imports_controller.rb" => "477a63f3c749de204ccdc0987cd6b20d",
+  #     "/app/controllers/decidim/direct_verifications/verification/admin/stats_controller.rb" => "a0c4ae48b1372ea5d37aae0112c9c826",
+  #     "/app/controllers/decidim/direct_verifications/verification/admin/user_authorizations_controller.rb" => "c0f3387a8b76ecdf238e12e6c03daf3e"
+  #   }
+  # }
 ]
 
 describe "Overriden files", type: :view do
   checksums.each do |item|
-    # rubocop:disable Rails/DynamicFindBy
-    spec = ::Gem::Specification.find_by_name(item[:package])
-    # rubocop:enable Rails/DynamicFindBy
+    spec = Gem::Specification.find_by_name(item[:package])
     item[:files].each do |file, signature|
       it "#{spec.gem_dir}#{file} matches checksum" do
         expect(md5("#{spec.gem_dir}#{file}")).to eq(signature)

@@ -4,7 +4,7 @@ require "rails_helper"
 
 describe AssembliesScoper do
   let(:app) { ->(env) { [200, env, "app"] } }
-  let(:env) { Rack::MockRequest.env_for("https://#{host}/#{path}?foo=bar", method: method, "decidim.current_organization" => organization) }
+  let(:env) { Rack::MockRequest.env_for("https://#{host}/#{path}?foo=bar", :method => method, "decidim.current_organization" => organization) }
   let(:method) { "GET" }
   let(:host) { "city.domain.org" }
   let(:middleware) { described_class.new(app) }
