@@ -12,9 +12,9 @@
 # rubocop:disable Metrics/PerceivedComplexity:
 class AssembliesScoper
   def self.alternative_assembly_types
-    return [] unless Rails.application.secrets.alternative_assembly_types
+    return [] if ENV["ALTERNATIVE_ASSEMBLY_TYPES"].blank?
 
-    Rails.application.secrets.alternative_assembly_types
+    JSON.parse(ENV.fetch("ALTERNATIVE_ASSEMBLY_TYPES", nil), symbolize_names: true)
   end
 
   def initialize(app)

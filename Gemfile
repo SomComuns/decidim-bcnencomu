@@ -7,13 +7,13 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.31-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
-gem "decidim-elections", DECIDIM_VERSION
-gem "decidim-verifications", DECIDIM_VERSION
 gem "decidim-civicrm", github: "openpoke/decidim-module-civicrm", branch: "release/0.31-stable"
 gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "release/0.31-stable"
+gem "decidim-direct_verifications", github: "Platoniq/decidim-verifications-direct_verifications", branch: "deps/decidim-0.31"
+gem "decidim-elections", DECIDIM_VERSION
 gem "decidim-pokecode", github: "openpoke/decidim-module-pokecode", branch: "release/0.31-stable"
 gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.31-stable"
-# gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", tag: "v1.3.0"
+gem "decidim-verifications", DECIDIM_VERSION
 gem "omniauth-decidim"
 
 gem "bootsnap", "~> 1.7"
