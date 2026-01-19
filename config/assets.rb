@@ -5,6 +5,5 @@ base_path = File.expand_path("..", __dir__)
 Decidim::Webpacker.register_path("#{base_path}/app/packs")
 Decidim::Webpacker.register_entrypoints(
   decidim_email: "#{base_path}/app/packs/entrypoints/bcnencomu_email.scss",
-  bcnencomu_consultations_utils_multiple: "#{base_path}/app/packs/entrypoints/bcnencomu_consultations.js",
   fearlesscities_theme: "#{base_path}/app/packs/entrypoints/fearlesscities.scss"
 )

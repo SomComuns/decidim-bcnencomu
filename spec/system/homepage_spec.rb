@@ -6,7 +6,6 @@ describe "Visit_homepage" do
   let(:organization) { create(:organization) }
 
   let!(:organs) { create(:assemblies_type, id: 17) }
-  let!(:consultation) { create(:consultation, :published, organization: organization) }
 
   before do
     switch_to_host(organization.host)
