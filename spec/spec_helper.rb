@@ -98,11 +98,11 @@ RSpec.configure do |config|
   config.before do
     I18n.available_locales = [:es, :ca, :en]
     I18n.default_locale = :ca
-    # rubocop:disable Rails/I18nLocaleAssignment
-    I18n.locale = :ca
-    # rubocop:enable Rails/I18nLocaleAssignment
-    Decidim.available_locales = [:ca, :es]
+    Decidim.available_locales = [:es, :ca, :en]
     Decidim.default_locale = :ca
-    Capybara.server = :puma
+  end
+
+  config.around do |example|
+    I18n.with_locale(:es) { example.run }
   end
 end
