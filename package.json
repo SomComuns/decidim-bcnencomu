@@ -13,7 +13,6 @@
   "dependencies": {
     "@decidim/browserslist-config": "file:packages/browserslist-config",
     "@decidim/core": "file:packages/core",
-    "@decidim/elections": "file:packages/elections",
     "@decidim/webpacker": "file:packages/webpacker",
     "@rails/actioncable": "^6.1.710",
     "codemirror": "^5.65.19",
@@ -41,7 +40,7 @@
     "@tarekraafat/autocomplete.js": "^10.2.7",
     "postcss-scss": "^4.0.9",
     "sass-embedded": "~1.57.1",
-    "shakapacker": "^8.3.0"
+    "shakapacker": "~8.3.0"
   },
   "browserslist": [
     "extends @decidim/browserslist-config"
