@@ -19,14 +19,6 @@ checksums = [
     }
   },
   {
-    package: "decidim-direct_verifications",
-    files: {
-      # devise
-      "/app/views/devise/mailer/direct_invite.html.erb" => "094174f490539e4b21d530efce951c2f",
-      "/app/views/devise/mailer/direct_invite.text.erb" => "a8bb5931b6c1b719a96de60dc7093d5f"
-    }
-  },
-  {
     package: "decidim-assemblies",
     files: {
       # just to take into the account if some routes change
@@ -39,18 +31,6 @@ checksums = [
     package: "decidim-meetings",
     files: {
       "/app/controllers/decidim/meetings/meetings_controller.rb" => "4e30f2de3bc8bc41e4f52ba28ba1bb4d"
-    }
-  },
-  {
-    package: "decidim-direct_verifications",
-    files: {
-      # The only change for controllers is the full namespace for the parent class as it didn't resolved it well when it
-      # was just ApplicationController
-      "/app/controllers/decidim/direct_verifications/verification/admin/authorizations_controller.rb" => "5b713aa72da2ba5e4f0fefa840816004",
-      "/app/controllers/decidim/direct_verifications/verification/admin/direct_verifications_controller.rb" => "dfe29d5353030989c07866d37b794157",
-      "/app/controllers/decidim/direct_verifications/verification/admin/imports_controller.rb" => "43852a21a6aca14404c2959bb70bdb19",
-      "/app/controllers/decidim/direct_verifications/verification/admin/stats_controller.rb" => "a0c4ae48b1372ea5d37aae0112c9c826",
-      "/app/controllers/decidim/direct_verifications/verification/admin/user_authorizations_controller.rb" => "705d2ef9a0c33ad68899b28c4b1dc42d"
     }
   }
 ]

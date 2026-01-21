@@ -1,15 +1,4 @@
 GIT
-  remote: https://github.com/Platoniq/decidim-verifications-direct_verifications.git
-  revision: 70854d15dc2415e610141d00e0316bac825be8c8
-  branch: deps/decidim-0.31
-  specs:
-    decidim-direct_verifications (1.7.0)
-      decidim-admin (>= 0.31.0, < 0.32)
-      decidim-core (>= 0.31.0, < 0.32)
-      decidim-initiatives (>= 0.31.0, < 0.32)
-      deface (~> 1.5)
-
-GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
   revision: b8bbaef4fb1bae845f8ce4beede7323faed674f8
   branch: release/0.31-stable
@@ -181,11 +170,6 @@ GIT
       decidim-core (= 0.31.0)
     decidim-generators (0.31.0)
       decidim-core (= 0.31.0)
-    decidim-initiatives (0.31.0)
-      decidim-admin (= 0.31.0)
-      decidim-comments (= 0.31.0)
-      decidim-core (= 0.31.0)
-      decidim-verifications (= 0.31.0)
     decidim-meetings (0.31.0)
       decidim-core (= 0.31.0)
       decidim-forms (= 0.31.0)
@@ -1111,7 +1095,6 @@ DEPENDENCIES
   decidim-civicrm!
   decidim-decidim_awesome!
   decidim-dev!
-  decidim-direct_verifications!
   decidim-elections!
   decidim-pokecode!
   decidim-term_customizer!
