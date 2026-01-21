@@ -10,7 +10,7 @@ describe "Visit_assemblies" do
   let!(:assembly) { create(:assembly, slug: "slug3", assembly_type: nil, organization: organization) }
   let!(:assembly2) { create(:assembly, slug: "slug2", assembly_type: type2, organization: organization) }
 
-  let(:route) { "organs" } # same as defined in secrets.yml!!
+  let(:route) { "organs" }
   let(:position) { 2.4 }
   let(:types) { [organs.id] }
   let(:alternative_assembly_types) do
