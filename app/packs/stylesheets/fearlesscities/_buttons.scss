@@ -1,26 +1,17 @@
-@import "variables";
-
 a.hero-cta.button {
   font-family: "Poppins Bold", sans-serif;
-  background-color: $fearless-red;
-  border: 1px solid $fearless-black;
-  border-radius: 10em;
+  @apply rounded-[10em] border border-solid border-fearlessBlack bg-fearlessRed;
 
   &:hover {
-    background-color: white;
-    color: $fearless-red;
+    @apply bg-white text-fearlessRed;
   }
 }
 
 a.button.hollow {
   font-family: "Poppins Bold", sans-serif;
-  border-radius: 10em;
-  border: 1px solid $fearless-black;
-  color: $fearless-red;
-
+  @apply rounded-[10em] border border-solid border-fearlessBlack text-fearlessRed;
 
   &:hover {
-    background-color: $fearless-red;
-    color: white;
+    @apply bg-fearlessRed text-white;
   }
 }

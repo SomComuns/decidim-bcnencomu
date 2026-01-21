@@ -1,28 +1,27 @@
-@import "variables";
-
 .process-nav {
   .process-nav__content ul {
-    padding: 1em 0 1em 0;
+    @apply py-[1em] px-0;
 
     li {
       box-shadow: none;
+      @apply shadow-none;
 
       &.is-active {
         box-shadow: none;
         background-color: $fearless-red;
         border: 1px solid $fearless-black;
         border-radius: 2em;
+        @apply bg-fearlessRed border border-solid border-fearlessBlack rounded-[2em] shadow-none;
 
         a {
-          color: white;
+          @apply text-White;
         }
 
         &:hover {
-          text-decoration: underline;
-          background-color: white;
+          @apply underline bg-white;
 
           a {
-            color: $fearless-red;
+            @apply text-fearlessRed;
           }
         }
       }

@@ -1,23 +1,22 @@
-@import "_variables";
-
 .decidim-logo {
-	width: 80px;
+	@apply w-20;
 }
 
 //Main footer
 .main-footer {
-  background-color: #fff;
-  color: $navbar-fg;
+  @apply bg-[#fff] text-navbarFg;
+
   a {
-  	color: $navbar-fg;
+  	@apply text-navbarFg;
+
       &:hover {
-        color: $navbar-fg-hover;
+        @apply text-navbarFgHover;
       }
   }
 }
 
 @media print, screen and (min-width: 64em) {
   .main__footer__nav {
-    text-align: left;
+    @apply text-left;
   }
 }

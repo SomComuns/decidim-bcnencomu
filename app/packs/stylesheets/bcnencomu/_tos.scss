@@ -1,9 +1,3 @@
 .tos-affix {
-  position: fixed;
-  bottom: 0;
-  left:0;
-  width:100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  z-index: 100;
+  @apply fixed bottom-0 left-0 w-full pt-0 pb-0 z-100;
 }

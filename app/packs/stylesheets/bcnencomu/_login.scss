@@ -1,10 +1,7 @@
 .social-register, #loginModal {
   .button--social.button--civicrm {
     img.icon.external-icon {
-      display: block !important;
-      filter: brightness(0) invert(1);
-      width: auto;
-      height: 100%;
+      @apply h-full w-auto !block brightness-[0] invert-[1];
     }
   }
 }
@@ -12,23 +9,16 @@
 #loginModal {
   .button--social.button--civicrm {
     img.icon.external-icon {
-      height: 2rem;
-      margin: 0 0.5rem;
+      @apply h-[2rem] my-0 mx-2;
     }
+
     .button--social__icon {
-      float: left;
+      @apply float-left;
     }
+
     .show-for-sr {
-      display: block;
-      height: auto !important;
-      width: auto !important;
-      position: static !important;
+      @apply block !h-auto !w-auto !static !whitespace-normal !overflow-auto mt-[1.3rem] !pr-[0.6rem];
       clip: auto !important;
-      white-space: normal !important;
-      overflow: auto !important;
-      margin-top: 1.3rem;
-      padding-right: 0.6rem !important;
     }
   }
 }
-

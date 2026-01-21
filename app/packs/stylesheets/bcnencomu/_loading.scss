@@ -1,19 +1,11 @@
-@import "variables";
-$spCol: $navbar-fg;
-
 .sp {
-	width: 32px;
-	height: 32px;
-	clear: both;
-	margin: 20px auto;
+	@apply w-8 h-8 clear-both my-5 mx-auto;
 }
 
 
 /* Spinner Circle Rotation */
 .sp-circle {
-	border: 4px rgba($spCol,0.25) solid;
-	border-top: 4px rgba($spCol,1) solid;
-	border-radius: 50%;
+	@apply border-[4px] border-[rgba(#2c2930,0.25)] border-solid border-t-[4px] border-t-[rgba(#2c2930,1)] rounded-[50%];
 	-webkit-animation: spCircRot .6s infinite linear;
 	animation: spCircRot .6s infinite linear;
 }

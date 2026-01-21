@@ -1,104 +1,110 @@
-@import "variables";
-@import "foundation-sites/scss/foundation";
-
 // Overide background default bar
 .title-bar{
-	background-color: $title-bar-bg;
+	@apply bg-titleBarBg;
 }
 
 .navbar {
-	background-color: $navbar-bg;
+	@apply bg-navbarBg;
 }
+
 .main-nav__link a {
-	color: $navbar-fg;
+	@apply text-navbarFg;
+
 	&:hover {
-		color: $navbar-fg-hover;
+		@apply text-navbarFgHover;
 	}
 }
+
 .main-nav__link--active a {
-	background: $navbar-bg-hover;
+	@apply bg-navbarBgHover;
 }
 
 .show-for-medium {
 	.main-nav__link a:hover {
-		box-shadow: inset 0 4px 0 0 lighten($primary, 10%);
+		box-shadow: inset 0 4px 0 0 lighten(#D83926, 10%);
 	}
 }
+
 .hide-for-medium {
 	.main-nav__link a:hover {
-	    box-shadow: inset 4px 0 0 0 lighten($primary, 10%);
+	    box-shadow: inset 4px 0 0 0 lighten(#D83926, 10%);
 	}
 }
+
 .off-canvas .close-button {
-  color: $primary;
+  @apply text-primary;
 }
 
 .dropdown.menu .is-active > a {
-	color: $link-color;
+	@apply text-linkColor;
 }
 
 .topbar_ {
 	&_menu {
-		padding: 0.125rem 0.5rem 0;
-		background: rgba(48, 65, 93, 0.1);
-		border-radius: 12.5%;
+		@apply pt-[0.125rem] px-2 pb-0 bg-[rgba(48,65,93,0.1)] rounded-[12.5%];
+
 		[data-toggle] {
-			margin-bottom:0;
-			padding: 6px 3px;
+			@apply mb-0 py-[6px] px-[3px];
 		}
+
 		.icon--menu {
-			fill: $primary;
-			width: 1em;
-			height: 1em;
+			@apply w-4 h-4 fill-primary;
 		}
 	}
+
 	&_edit__link a {
-		padding-left: 5px;
-		color: $link-color;
+		@apply pl-[5px] text-linkColor;
+
 		&:hover {
-			color: $link-color;
+			@apply text-linkColor;
 		}
 	}
+
 	&_user__login{
 	  a {
-	    font-weight: 500;
-	    color: $link-color;
+		@apply font-medium text-linkColor;
 	  }
 	}
+
 	&_notifications, &_conversations{
 	  .icon {
-			fill: $link-color;
+		@apply fill-linkColor;
 	  }
 	}
 
 	&_dropmenu {
 		> ul > li > a {
-			color: $link-color;
+			@apply text-linkColor;
 		}
+
 		.is-dropdown-submenu-parent {
 			> a, &.is-active > a {
 				@include breakpoint(smallmedium down) {
-					color: white;
+					@apply text-white;
 				}
 			}
 		}
+
 		.is-dropdown-submenu li a {
-			color: $link-color;
+			@apply text-linkColor;
 		}
 	}
+
 	&_search {
 		input, input:focus {
-			background-color: $navbar-bg;
-			color: $navbar-fg;
+			@apply bg-navbarBg text-navbarFg;
 		}
+
 		input::placeholder, textarea::placeholder {
-			color: $navbar-fg;
+			@apply text-navbarFg;
 		}
+
 		svg {
-			color: $navbar-fg;
+			@apply text-navbarFg;
 		}
+
 		&:not(:focus-within) button {
-		  background: $navbar-bg;
+		  @apply bg-navbarBg;
 		}
 	}
 }
@@ -107,20 +113,18 @@
 .hide-for-medium{
 
   .topbar__user__login{
-    border-bottom: none;
-    border-top: none;
+	@apply divide-y-0;
 
     a{
-      color: $navbar-bg;
-      font-weight: 600;
+	  @apply text-navbarBg font-semibold;
 
       &:hover{
-        color: $anchor-color;
+		@apply text-linkColor;
       }
     }
   }
 }
 
 .logo-wrapper span{
-	color: $link-color;
+	@apply text-linkColor;
 }

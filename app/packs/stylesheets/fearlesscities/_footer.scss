@@ -1,25 +1,12 @@
-@import "variables";
-
 .mini-footer, .main-footer {
-  background-color: transparent;
-  display: block;
-  z-index: 1;
-  color:white;
+  @apply text-white bg-transparent block z-1;
 
   a {
-    color: white;
+    @apply text-white;
   }
 }
 
 .main-footer::before {
   content: "";
-  height: 500%;
-  width: 100vw;
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  background-image: image-url("images/texture-blue.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  @apply content-[''] h-[500%] w-[100vw] block absolute -z-1 top-0 bg-[url('images/texture-blue.jpg')] bg-no-repeat bg-bottom;
 }

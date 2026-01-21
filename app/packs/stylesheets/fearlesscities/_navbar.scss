@@ -1,43 +1,30 @@
-@import "variables";
-
 .title-bar {
   a {
     font-family: "Poppins Bold", sans-serif;
-    color: $fearless-blue;
+    @apply text-fearlessBlue;
   }
 }
 
 .navbar {
-  background-color: white;
-  padding-bottom: 1em;
+  @apply bg-white pb-[1em];
 
   .main-nav ul {
-    text-transform: uppercase;
+    @apply uppercase;
 
     .main-nav__link {
       a {
-        color: $fearless-blue;
-        box-shadow: none;
+        @apply text-fearlessBlue shadow-none;
 
         &:hover {
-          box-shadow: none;
-          text-decoration: underline;
+          @apply shadow-none underline;
         }
       }
 
       &.main-nav__link--active a {
-        box-shadow: none;
-        border: 1px solid $fearless-black;
-        border-radius: 10em;
-        color: $fearless-blue;
-        background-color: $fearless-red;
-        color: white;
+        @apply shadow-none border border-solid border-fearlessBlack rounded-[10em] bg-fearlessRed text-White;
 
         &:hover {
-          box-shadow: none;
-          background-color: white;
-          text-decoration: none;
-          color: $fearless-red;
+          @apply bg-white no-underline text-fearlessRed shadow-none;
         }
       }
     }

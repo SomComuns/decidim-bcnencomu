@@ -1,46 +1,38 @@
-@import "variables";
-
 .card {
-
-  border-radius: 16px;
-  border: 1px solid $fearless-black;
+  @apply border border-solid border-fearlessBlack rounded-2xl;
 
   img.card__image {
-    border-radius: 16px 16px 0px 0px;
+    @apply rounded-t-2xl;
   }
 
   .card__image-top {
-    width: 8em;
-    align-content: center;
-    margin: auto;
-    border-radius: 50%;
+    @apply m-auto rounded-[50%] w-[8em] content-center;
   }
 
   .card__content {
     .card__title.card__link {
-      color: $fearless-blue;
+      @apply text-fearlessBlue;
     }
   }
 
- .card-data .card-data__item:last-child {
+  .card-data .card-data__item:last-child {
     border-right: unset;
   }
 
   .card__button {
     font-family: "Poppins Bold", sans-serif;
-    border-radius: 16px;
+    @apply rounded-2xl;
   }
 
   .card__footer {
-    border-radius: 0px 0px 16px 16px;
+    @apply rounded-b-2xl;
   }
 }
 
 #highlighted-assemblies {
   .card {
     .card__content {
-      text-align: center;
-      margin: auto;
+      @apply m-auto text-center;
     }
   }
 }
