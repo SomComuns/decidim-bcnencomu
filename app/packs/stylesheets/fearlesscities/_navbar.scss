@@ -21,7 +21,7 @@
       }
 
       &.main-nav__link--active a {
-        @apply shadow-none border border-solid border-fearlessBlack rounded-[10em] bg-fearlessRed text-White;
+        @apply shadow-none border border-solid border-fearlessBlack rounded-[10em] bg-fearlessRed text-white;
 
         &:hover {
           @apply bg-white no-underline text-fearlessRed shadow-none;

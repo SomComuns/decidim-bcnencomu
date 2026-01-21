@@ -77,14 +77,6 @@
 			@apply text-linkColor;
 		}
 
-		.is-dropdown-submenu-parent {
-			> a, &.is-active > a {
-				@include breakpoint(smallmedium down) {
-					@apply text-white;
-				}
-			}
-		}
-
 		.is-dropdown-submenu li a {
 			@apply text-linkColor;
 		}

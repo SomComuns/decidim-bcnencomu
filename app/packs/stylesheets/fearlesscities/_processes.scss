@@ -7,14 +7,10 @@
       @apply shadow-none;
 
       &.is-active {
-        box-shadow: none;
-        background-color: $fearless-red;
-        border: 1px solid $fearless-black;
-        border-radius: 2em;
         @apply bg-fearlessRed border border-solid border-fearlessBlack rounded-[2em] shadow-none;
 
         a {
-          @apply text-White;
+          @apply text-white;
         }
 
         &:hover {

@@ -1,65 +1,65 @@
-$fearless-yellow: #FFD21AFF;
-$fearless-blue: #554AE3FF;
-$fearless-red: #E43528FF;
-$fearless-black: #000000FF;
+// $fearless-yellow: #FFD21AFF;
+// $fearless-blue: #554AE3FF;
+// $fearless-red: #E43528FF;
+// $fearless-black: #000000FF;
 
-$primary: $fearless-blue;
-$primary-rgb: 84, 74, 227;
-$secondary: $fearless-red;
-$secondary-rgb: 228, 53, 40;
-$success: $fearless-yellow;
-$success-rgb: 255, 210, 26;
-$warning: $fearless-red;
-$warning-rgb: 228, 53, 40;
-$alert: #f54433;
-$alert-rgb: 245, 68, 51;
+// $primary: $fearless-blue;
+// $primary-rgb: 84, 74, 227;
+// $secondary: $fearless-red;
+// $secondary-rgb: 228, 53, 40;
+// $success: $fearless-yellow;
+// $success-rgb: 255, 210, 26;
+// $warning: $fearless-red;
+// $warning-rgb: 228, 53, 40;
+// $alert: #f54433;
+// $alert-rgb: 245, 68, 51;
 
-// Variables
+// // Variables
 
-$hue: (
-  primary: hue($primary),
-  secondary: hue($secondary),
-  success: hue($success),
-  warning: hue($warning),
-  alert: hue($alert),
-);
+// $hue: (
+//   primary: hue($primary),
+//   secondary: hue($secondary),
+//   success: hue($success),
+//   warning: hue($warning),
+//   alert: hue($alert),
+// );
 
-:root {
-  --primary: #{$primary};
-  --primary-rgb: #{$primary-rgb};
-  --secondary: #{$secondary};
-  --secondary-rgb: #{$secondary-rgb};
-  --success: #{$success};
-  --success-rgb: #{$success-rgb};
-  --warning: #{$warning};
-  --warning-rgb: #{$warning-rgb};
-  --alert: #{$alert};
-  --alert-rgb: #{$alert-rgb};
-}
+// :root {
+//   --primary: #{$primary};
+//   --primary-rgb: #{$primary-rgb};
+//   --secondary: #{$secondary};
+//   --secondary-rgb: #{$secondary-rgb};
+//   --success: #{$success};
+//   --success-rgb: #{$success-rgb};
+//   --warning: #{$warning};
+//   --warning-rgb: #{$warning-rgb};
+//   --alert: #{$alert};
+//   --alert-rgb: #{$alert-rgb};
+// }
 
-.callout.primary {
-  border-left: none;
-  background-color: hsl(map-get($hue, primary), 60, 90);
-}
+// .callout.primary {
+//   border-left: none;
+//   background-color: hsl(map-get($hue, primary), 60, 90);
+// }
 
-.callout.secondary {
-  border-left: none;
-  background-color: hsl(map-get($hue, secondary), 60, 90);
-}
+// .callout.secondary {
+//   border-left: none;
+//   background-color: hsl(map-get($hue, secondary), 60, 90);
+// }
 
-.callout.success {
-  border-left: none;
-  background-color: hsl(map-get($hue, success), 60, 90);
-}
+// .callout.success {
+//   border-left: none;
+//   background-color: hsl(map-get($hue, success), 60, 90);
+// }
 
-.callout.warning {
-  border-left: none;
-  background-color: hsl(map-get($hue, warning), 60, 90);
-}
+// .callout.warning {
+//   border-left: none;
+//   background-color: hsl(map-get($hue, warning), 60, 90);
+// }
 
-.callout.alert {
-  border-left: none;
-  background-color: hsl(map-get($hue, alert), 60, 90);
-}
+// .callout.alert {
+//   border-left: none;
+//   background-color: hsl(map-get($hue, alert), 60, 90);
+// }
 
-@import "./fonts";
+// @import "./fonts";

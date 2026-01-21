@@ -9,7 +9,7 @@ section.home-section {
 		}
 
 		.card {
-			@apply bg-none border-unset;
+			@apply bg-none border-0;
 
 			.card__image-top {
 				@apply m-auto rounded-[50%] w-[8em] content-center;
