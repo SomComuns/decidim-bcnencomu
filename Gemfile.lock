@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
-  revision: b8bbaef4fb1bae845f8ce4beede7323faed674f8
-  branch: release/0.31-stable
+  revision: 9ce4acae26a1161799cd0fc9ac767dcbaa11eadf
+  branch: main
   specs:
     decidim-decidim_awesome (0.14.0)
       active_hashcash (~> 0.4.0)
@@ -202,8 +202,8 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-civicrm.git
-  revision: addde7acc5f1c2c1941a30405b6efea5b923aaeb
-  branch: release/0.31-stable
+  revision: 850223b094276ca62f32541ad3dfdd7b17135fe7
+  branch: main
   specs:
     decidim-civicrm (0.9.0)
       decidim-admin (>= 0.31, < 0.32)
@@ -213,8 +213,8 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-pokecode.git
-  revision: 22eba99a4052e0453758742ca8781859f7b11843
-  branch: release/0.31-stable
+  revision: de1b475846314af7116a544f23ce034d0f978190
+  branch: main
   specs:
     decidim-pokecode (0.2.0)
       aws-sdk-s3
@@ -230,7 +230,7 @@ GIT
 GIT
   remote: https://github.com/openpoke/decidim-module-term_customizer.git
   revision: 8cd8bafc273b34ff7dae7c0dcbf231062aa68466
-  branch: release/0.31-stable
+  branch: main
   specs:
     decidim-term_customizer (0.31)
       decidim-admin (~> 0.31.0)
@@ -942,21 +942,21 @@ GEM
       nokogiri (>= 1.10.8)
       rubyzip (>= 1.3.0)
     rubyzip (2.3.2)
-    sass-embedded (1.97.2-aarch64-linux-gnu)
+    sass-embedded (1.97.3-aarch64-linux-gnu)
       google-protobuf (~> 4.31)
-    sass-embedded (1.97.2-aarch64-linux-musl)
+    sass-embedded (1.97.3-aarch64-linux-musl)
       google-protobuf (~> 4.31)
-    sass-embedded (1.97.2-arm-linux-gnueabihf)
+    sass-embedded (1.97.3-arm-linux-gnueabihf)
       google-protobuf (~> 4.31)
-    sass-embedded (1.97.2-arm-linux-musleabihf)
+    sass-embedded (1.97.3-arm-linux-musleabihf)
       google-protobuf (~> 4.31)
-    sass-embedded (1.97.2-arm64-darwin)
+    sass-embedded (1.97.3-arm64-darwin)
       google-protobuf (~> 4.31)
-    sass-embedded (1.97.2-x86_64-darwin)
+    sass-embedded (1.97.3-x86_64-darwin)
       google-protobuf (~> 4.31)
-    sass-embedded (1.97.2-x86_64-linux-gnu)
+    sass-embedded (1.97.3-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
-    sass-embedded (1.97.2-x86_64-linux-musl)
+    sass-embedded (1.97.3-x86_64-linux-musl)
       google-protobuf (~> 4.31)
     sassc (2.4.0)
       ffi (~> 1.9)
