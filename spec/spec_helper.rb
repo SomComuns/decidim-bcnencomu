@@ -103,6 +103,6 @@ RSpec.configure do |config|
   end
 
   config.around do |example|
-    I18n.with_locale(:es) { example.run }
+    I18n.with_locale(:ca) { example.run }
   end
 end
