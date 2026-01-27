@@ -12,18 +12,12 @@ gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_aweso
 gem "decidim-elections", DECIDIM_VERSION
 gem "decidim-pokecode", github: "openpoke/decidim-module-pokecode", branch: "main"
 gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "main"
-gem "decidim-verifications", DECIDIM_VERSION
-gem "omniauth-decidim"
 
 gem "bootsnap", "~> 1.7"
-
 gem "puma", ">= 6.3.1"
-gem "uglifier", "~> 4.1"
-
-gem "image_processing", ">= 1.2"
 
 group :development, :test do
-  gem "brakeman", "~> 6.1"
+  gem "brakeman"
   gem "byebug", "~> 11.0", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
 end
