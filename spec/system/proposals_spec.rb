@@ -2,11 +2,11 @@
 
 require "rails_helper"
 
-describe "Visit a proposal", type: :system, perform_enqueued: true do
-  let(:organization) { create :organization }
-  let(:participatory_process) { create :participatory_process, organization: organization }
-  let(:proposals_component) { create :component, manifest_name: :proposals, participatory_space: participatory_process }
-  let!(:proposal) { create :proposal, component: proposals_component }
+describe "Visit_proposal", perform_enqueued: true do
+  let(:organization) { create(:organization) }
+  let(:participatory_process) { create(:participatory_process, organization:) }
+  let(:proposals_component) { create(:component, manifest_name: :proposals, participatory_space: participatory_process) }
+  let!(:proposal) { create(:proposal, component: proposals_component) }
 
   before do
     switch_to_host(organization.host)
