@@ -11,9 +11,45 @@ GIT
       sassc (~> 2.3)
 
 GIT
-  remote: https://github.com/decidim/decidim.git
-  revision: 2168442b0804dc35e970931108a1c8edd7666d65
-  branch: release/0.31-stable
+  remote: https://github.com/openpoke/decidim-module-civicrm.git
+  revision: 850223b094276ca62f32541ad3dfdd7b17135fe7
+  branch: main
+  specs:
+    decidim-civicrm (0.9.0)
+      decidim-admin (>= 0.31, < 0.32)
+      decidim-core (>= 0.31, < 0.32)
+      decidim-verifications (>= 0.31, < 0.32)
+      deface (~> 1.9)
+
+GIT
+  remote: https://github.com/openpoke/decidim-module-pokecode.git
+  revision: de1b475846314af7116a544f23ce034d0f978190
+  branch: main
+  specs:
+    decidim-pokecode (0.2.0)
+      aws-sdk-s3
+      decidim-core (>= 0.31.0, < 0.32)
+      deface (>= 1.5)
+      health_check
+      rails_semantic_logger
+      sentry-rails
+      sentry-ruby
+      sidekiq
+      sidekiq-cron
+
+GIT
+  remote: https://github.com/openpoke/decidim-module-term_customizer.git
+  revision: 8cd8bafc273b34ff7dae7c0dcbf231062aa68466
+  branch: main
+  specs:
+    decidim-term_customizer (0.31)
+      decidim-admin (~> 0.31.0)
+      decidim-core (~> 0.31.0)
+
+GIT
+  remote: https://github.com/openpoke/decidim.git
+  revision: e75c8169cd555c4af06c675fd14bf01b33f6b87c
+  branch: 0.31-backports
   specs:
     decidim (0.31.0)
       decidim-accountability (= 0.31.0)
@@ -38,12 +74,6 @@ GIT
     decidim-accountability (0.31.0)
       decidim-comments (= 0.31.0)
       decidim-core (= 0.31.0)
-    decidim-admin (0.31.0)
-      active_link_to (~> 1.0)
-      decidim-core (= 0.31.0)
-      devise (~> 4.7)
-      devise-i18n (~> 1.2)
-      devise_invitable (~> 2.0, >= 2.0.9)
     decidim-api (0.31.0)
       decidim-core (= 0.31.0)
       devise-jwt (~> 0.12.1)
@@ -62,61 +92,6 @@ GIT
     decidim-comments (0.31.0)
       decidim-core (= 0.31.0)
       redcarpet (~> 3.5, >= 3.5.1)
-    decidim-core (0.31.0)
-      active_link_to (~> 1.0)
-      acts_as_list (~> 1.0)
-      batch-loader (~> 2.0)
-      browser (~> 6.2.0)
-      cells-erb (~> 0.1.0)
-      cells-rails (~> 0.1.3)
-      charlock_holmes (~> 0.7)
-      chartkick (~> 5.1.2)
-      concurrent-ruby (~> 1.3.0)
-      connection_pool (< 3)
-      data_migrate (~> 11.3)
-      date_validator (~> 0.12.0)
-      devise (~> 4.7)
-      devise-i18n (~> 1.2)
-      diffy (~> 3.3)
-      doorkeeper (~> 5.6, >= 5.6.6)
-      doorkeeper-i18n (~> 4.0)
-      file_validators (~> 3.0)
-      fog-local (~> 0.6)
-      geocoder (~> 1.8)
-      hashdiff (>= 0.4.0, < 2.0.0)
-      hexapdf (~> 1.1.0)
-      image_processing (~> 1.2)
-      invisible_captcha (~> 0.12)
-      kaminari (~> 1.2, >= 1.2.1)
-      loofah (~> 2.19, >= 2.19.1)
-      mime-types (>= 1.16, < 4.0)
-      mini_magick (~> 4.9)
-      net-smtp (~> 0.5.0)
-      nokogiri (~> 1.16, >= 1.16.2)
-      omniauth (~> 2.0)
-      omniauth-facebook (~> 5.0)
-      omniauth-google-oauth2 (~> 1.0)
-      omniauth-rails_csrf_protection (~> 1.0)
-      omniauth-twitter (~> 1.4)
-      paper_trail (~> 16.0)
-      paranoia (~> 3.0.0)
-      pg (~> 1.5.0, < 2)
-      pg_search (~> 2.2)
-      premailer-rails (~> 1.10)
-      rack (~> 2.2, >= 2.2.8.1)
-      rack-attack (~> 6.0)
-      rails (~> 7.2.0, >= 7.2.2.2)
-      rails-i18n (~> 7.0)
-      ransack (~> 4.2.0)
-      redis (~> 4.1)
-      request_store (~> 1.7.0)
-      rqrcode (~> 2.2.0)
-      rubyXL (~> 3.4)
-      rubyzip (~> 2.0)
-      shakapacker (~> 8.3.0)
-      valid_email2 (~> 7.0)
-      web-push (~> 3.0)
-      wisper (~> 3.0)
     decidim-debates (0.31.0)
       decidim-comments (= 0.31.0)
       decidim-core (= 0.31.0)
@@ -197,44 +172,6 @@ GIT
       devise (~> 4.7)
       devise-i18n (~> 1.2)
       devise_invitable (~> 2.0, >= 2.0.9)
-    decidim-verifications (0.31.0)
-      decidim-core (= 0.31.0)
-
-GIT
-  remote: https://github.com/openpoke/decidim-module-civicrm.git
-  revision: 850223b094276ca62f32541ad3dfdd7b17135fe7
-  branch: main
-  specs:
-    decidim-civicrm (0.9.0)
-      decidim-admin (>= 0.31, < 0.32)
-      decidim-core (>= 0.31, < 0.32)
-      decidim-verifications (>= 0.31, < 0.32)
-      deface (~> 1.9)
-
-GIT
-  remote: https://github.com/openpoke/decidim-module-pokecode.git
-  revision: de1b475846314af7116a544f23ce034d0f978190
-  branch: main
-  specs:
-    decidim-pokecode (0.2.0)
-      aws-sdk-s3
-      decidim-core (>= 0.31.0, < 0.32)
-      deface (>= 1.5)
-      health_check
-      rails_semantic_logger
-      sentry-rails
-      sentry-ruby
-      sidekiq
-      sidekiq-cron
-
-GIT
-  remote: https://github.com/openpoke/decidim-module-term_customizer.git
-  revision: 8cd8bafc273b34ff7dae7c0dcbf231062aa68466
-  branch: main
-  specs:
-    decidim-term_customizer (0.31)
-      decidim-admin (~> 0.31.0)
-      decidim-core (~> 0.31.0)
 
 GEM
   remote: https://rubygems.org/
@@ -412,6 +349,69 @@ GEM
     date_validator (0.12.0)
       activemodel (>= 3)
       activesupport (>= 3)
+    decidim-admin (0.31.0)
+      active_link_to (~> 1.0)
+      decidim-core (= 0.31.0)
+      devise (~> 4.7)
+      devise-i18n (~> 1.2)
+      devise_invitable (~> 2.0, >= 2.0.9)
+    decidim-core (0.31.0)
+      active_link_to (~> 1.0)
+      acts_as_list (~> 1.0)
+      batch-loader (~> 2.0)
+      browser (~> 6.2.0)
+      cells-erb (~> 0.1.0)
+      cells-rails (~> 0.1.3)
+      charlock_holmes (~> 0.7)
+      chartkick (~> 5.1.2)
+      concurrent-ruby (~> 1.3.0)
+      connection_pool (< 3)
+      data_migrate (~> 11.3)
+      date_validator (~> 0.12.0)
+      devise (~> 4.7)
+      devise-i18n (~> 1.2)
+      diffy (~> 3.3)
+      doorkeeper (~> 5.6, >= 5.6.6)
+      doorkeeper-i18n (~> 4.0)
+      file_validators (~> 3.0)
+      fog-local (~> 0.6)
+      geocoder (~> 1.8)
+      hashdiff (>= 0.4.0, < 2.0.0)
+      hexapdf (~> 1.1.0)
+      image_processing (~> 1.2)
+      invisible_captcha (~> 0.12)
+      kaminari (~> 1.2, >= 1.2.1)
+      loofah (~> 2.19, >= 2.19.1)
+      mime-types (>= 1.16, < 4.0)
+      mini_magick (~> 4.9)
+      net-smtp (~> 0.5.0)
+      nokogiri (~> 1.16, >= 1.16.2)
+      omniauth (~> 2.0)
+      omniauth-facebook (~> 5.0)
+      omniauth-google-oauth2 (~> 1.0)
+      omniauth-rails_csrf_protection (~> 1.0)
+      omniauth-twitter (~> 1.4)
+      paper_trail (~> 16.0)
+      paranoia (~> 3.0.0)
+      pg (~> 1.5.0, < 2)
+      pg_search (~> 2.2)
+      premailer-rails (~> 1.10)
+      rack (~> 2.2, >= 2.2.8.1)
+      rack-attack (~> 6.0)
+      rails (~> 7.2.0, >= 7.2.2.2)
+      rails-i18n (~> 7.0)
+      ransack (~> 4.2.0)
+      redis (~> 4.1)
+      request_store (~> 1.7.0)
+      rqrcode (~> 2.2.0)
+      rubyXL (~> 3.4)
+      rubyzip (~> 2.0)
+      shakapacker (~> 8.3.0)
+      valid_email2 (~> 7.0)
+      web-push (~> 3.0)
+      wisper (~> 3.0)
+    decidim-verifications (0.31.0)
+      decidim-core (= 0.31.0)
     declarative-builder (0.2.0)
       trailblazer-option (~> 0.1.0)
     declarative-option (0.1.0)
