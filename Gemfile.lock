@@ -12,8 +12,8 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-civicrm.git
-  revision: 850223b094276ca62f32541ad3dfdd7b17135fe7
-  branch: main
+  revision: dee064b13f25793b374f370db01e43c323a8e8dd
+  branch: fix-multiselect-elections
   specs:
     decidim-civicrm (0.9.0)
       decidim-admin (>= 0.31, < 0.32)

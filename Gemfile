@@ -7,7 +7,7 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = { github: "openpoke/decidim", branch: "0.31-backports" }.freeze
 
 gem "decidim", DECIDIM_VERSION
-gem "decidim-civicrm", github: "openpoke/decidim-module-civicrm", branch: "main"
+gem "decidim-civicrm", github: "openpoke/decidim-module-civicrm", branch: "fix-multiselect-elections"
 gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-elections", DECIDIM_VERSION
 gem "decidim-pokecode", github: "openpoke/decidim-module-pokecode", branch: "main"

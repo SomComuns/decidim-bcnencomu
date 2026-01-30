@@ -64,46 +64,6 @@ ca:
       titles:
         response_groups: Grups de respostes
         results: Resultats
-    authorization_handlers:
-      direct_verifications:
-        explanation: Verificació directa per al cens general
-        name: Cens general
-      direct_verifications_activistes:
-        explanation: Cens d'actvistes
-        name: Activistes de BCNenComú
-      direct_verifications_andreu:
-        explanation: Verificació directa per al cens de Sant Andreu
-        name: Sant Andreu
-      direct_verifications_barris:
-        explanation: Verificació directa per al cens de Nou Barris
-        name: Nou Barris
-      direct_verifications_corts:
-        explanation: Verificació directa per al cens de Les Corts
-        name: Les Corts
-      direct_verifications_eixample:
-        explanation: Verificació directa per al cens de L'Eixample
-        name: L'Eixample
-      direct_verifications_gracia:
-        explanation: Verificació directa per al cens de Gràcia
-        name: Gràcia
-      direct_verifications_horta:
-        explanation: Verificació directa per al cens de Horta - Guinardó
-        name: Horta - Guinardó
-      direct_verifications_marti:
-        explanation: Verificació directa per al cens de Sant Martí
-        name: Sant Martí
-      direct_verifications_sants:
-        explanation: Verificació directa per al cens de Sants - Montjuïc
-        name: Sants - Montjuïc
-      direct_verifications_sarria:
-        explanation: Verificació directa per al cens de Sarrià - Sant Gervasi
-        name: Sarrià - Sant Gervasi
-      direct_verifications_vella:
-        explanation: Verificació directa per al cens de Ciutat Vella
-        name: Ciutat Vella
-      direct_verifications_generic_1:
-        explanation: Verificació directa genèrica
-        name: Assamblea DEMO
     assemblies:
       assemblies:
         show:
