@@ -15,18 +15,10 @@ checksums = [
     }
   },
   {
-    package: "decidim-assemblies",
+    package: "decidim-elections",
     files: {
       # just to take into the account if some routes change
-      "/lib/decidim/assemblies/engine.rb" => "e786f894c74012de408f1062113ce75a",
-      "/lib/decidim/assemblies/admin_engine.rb" => "159b92a0968dccc3b522cc13fd00732d",
-      "/app/models/decidim/assembly.rb" => "0a821e89a6f470d1cf370fa7eb474236"
-    }
-  },
-  {
-    package: "decidim-meetings",
-    files: {
-      "/app/controllers/decidim/meetings/meetings_controller.rb" => "4e30f2de3bc8bc41e4f52ba28ba1bb4d"
+      "/app/views/decidim/elections/admin/dashboard/_questions_with_results.html.erb" => "d34c5f76445d444e9e28b2192d80d420"
     }
   }
 ]

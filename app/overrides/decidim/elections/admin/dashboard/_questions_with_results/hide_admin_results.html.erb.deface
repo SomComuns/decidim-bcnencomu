@@ -1,0 +1,7 @@
+<!-- replace 'erb[silent]:contains("question.response_options.each")' -->
+
+<% if election.ongoing? %>
+  <tr><td colspan="3">L'elecció està activa, els resultats sortiran un cop s'acabi.</td></tr>
+<% end %>
+
+<% !election.ongoing? && question.response_options.each do |option| %>
