@@ -1,0 +1,5 @@
+<!-- insert_after "erb[loud]:contains('oauth_icon provider')" -->
+
+<% if provider == :civicrm %>
+  <%= t("devise.shared.sign_in_civicrm") %>
+<% end %>

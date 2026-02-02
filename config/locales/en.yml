@@ -1,12 +1,5 @@
 ---
 en:
-  layouts:
-    footer:
-      made_by_platoniq: Website made with <a target="_blank" href="https://github.com/decidim/decidim">free software</a> by <a target="_blank" href="http://platoniq.net">Platoniq</a>.
-  decidim:
-    questions:
-      vote_button:
-        confirm_revoke: Are you sure you want to revoke your vote?
   devise:
     mailer:
       invitation_instructions:
@@ -19,6 +12,4 @@ en:
           You have been invited to the Network %{application}. To activate your account and participate, you must accept the invitation via this link.
         subject: "Invitation: %{application}"
     shared:
-      links:
-        activate_password: "Account not activated? Create a password here."
-        sign_in_with_provider: Sign in with Barcelona En Comú
+      sign_in_civicrm: Sign in with Barcelona En Comú
