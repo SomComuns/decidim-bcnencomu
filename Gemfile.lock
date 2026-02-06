@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-civicrm.git
-  revision: baae4f24781fe0bbbbe51399f14ad20de8203e94
+  revision: cccafa03bf35c50afabc7b28373a6028d22d15e9
   branch: feature/civicrm-election-census
   specs:
     decidim-civicrm (0.9.1)
