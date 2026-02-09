@@ -12,8 +12,8 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-civicrm.git
-  revision: d4aa743043a6db7dabaf0a4991952a8e5ad1e90b
-  branch: fix/census-group-membership-local-check
+  revision: 84c5d2dd1f2fe041c1240f1dd26f4e4aefb6ec7e
+  branch: main
   specs:
     decidim-civicrm (0.9.1)
       decidim-admin (>= 0.31, < 0.32)
