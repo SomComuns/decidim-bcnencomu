@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-civicrm.git
-  revision: 82392dba1eabe6c84c99de9e7f3783df7e3dc1cb
+  revision: 13f8ba087952a39417bf6ab4fe4cd276290359c6
   branch: feature/prevent-revoting
   specs:
     decidim-civicrm (0.9.1)
