@@ -1,15 +1,23 @@
 ---
 en:
+  decidim:
+    civicrm:
+      censuses:
+        civicrm_groups:
+          custom_fields:
+            Dades_comunes:
+              Pwd_Decidim: PIN (the one you received by email)
   devise:
     mailer:
       invitation_instructions:
-        accept_until: This invitation will give you access to the website and expires %{due_date}.
+        accept_until: This invitation will give you access to the website and expires
+          %{due_date}.
         someone_invited_you: |
           [Castellano]
           Has sido invitado/invitada a la plataforma de participación %{application}. Para activar tu cuenta y participar, has de aceptar la invitación a través de este enlace.
 
           [English]
           You have been invited to the Network %{application}. To activate your account and participate, you must accept the invitation via this link.
-        subject: "Invitation: %{application}"
+        subject: 'Invitation: %{application}'
     shared:
       sign_in_civicrm: Sign in with Barcelona En Comú

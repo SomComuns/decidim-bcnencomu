@@ -1,5 +1,12 @@
 ---
 es:
+  decidim:
+    civicrm:
+      censuses:
+        civicrm_groups:
+          custom_fields:
+            Dades_comunes:
+              Pwd_Decidim: PIN (el que has recibido por correo electrónico)
   devise:
     mailer:
       invitation_instructions:
@@ -10,7 +17,6 @@ es:
 
           [English]
           You have been invited to the Network %{application}. To activate your account and participate, you must accept the invitation via this link.
-        subject: "Invitación: %{application}"
+        subject: 'Invitación: %{application}'
     shared:
-      sign_in_civicrm: Inicia sessión con Barcelona En Comú
-
+      sign_in_civicrm: Inicia sesión con Barcelona En Comú
