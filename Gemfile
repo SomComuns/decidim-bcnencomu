@@ -10,6 +10,7 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-civicrm", github: "openpoke/decidim-module-civicrm", branch: "main"
 gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-elections", DECIDIM_VERSION
+gem "decidim-extra_censuses", github: "openpoke/decidim-module-extra_censuses", branch: "feature/borda-voting"
 gem "decidim-pokecode", github: "openpoke/decidim-module-pokecode", branch: "main"
 gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "main"
 

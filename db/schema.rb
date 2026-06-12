@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_05_21_110027) do
+ActiveRecord::Schema[7.2].define(version: 2026_06_12_124316) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
   enable_extension "pg_trgm"
@@ -872,6 +872,8 @@ ActiveRecord::Schema[7.2].define(version: 2026_05_21_110027) do
     t.integer "votes_count", default: 0, null: false
     t.integer "response_options_count", default: 0, null: false
     t.integer "max_choices"
+    t.integer "min_choices"
+    t.jsonb "settings", default: {}, null: false
     t.index ["election_id"], name: "index_questions_on_election_id"
   end
 
@@ -881,6 +883,8 @@ ActiveRecord::Schema[7.2].define(version: 2026_05_21_110027) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "votes_count", default: 0, null: false
+    t.string "group_id"
+    t.jsonb "settings", default: {}, null: false
     t.index ["question_id"], name: "index_response_options_on_question_id"
   end
 
@@ -898,6 +902,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_05_21_110027) do
     t.string "voter_uid", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "position"
     t.index ["question_id", "voter_uid", "response_option_id"], name: "index_elections_votes_on__voter_uid_and_response", unique: true
     t.index ["question_id"], name: "index_decidim_elections_votes_on_question_id"
     t.index ["response_option_id"], name: "index_decidim_elections_votes_on_response_option_id"
