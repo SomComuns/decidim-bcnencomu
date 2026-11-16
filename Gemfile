@@ -8,10 +8,10 @@ DECIDIM_VERSION = { github: "openpoke/decidim", branch: "0.31-backports" }.freez
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-civicrm", github: "openpoke/decidim-module-civicrm", branch: "release/0.31-stable"
-gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "main"
+gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "release/0.31-stable"
 gem "decidim-elections", DECIDIM_VERSION
-gem "decidim-extra_censuses", github: "openpoke/decidim-module-extra_censuses", branch: "main"
-gem "decidim-pokecode", github: "openpoke/decidim-module-pokecode", branch: "main"
+gem "decidim-extra_censuses", github: "openpoke/decidim-module-extra_censuses", branch: "release/0.31-stable"
+gem "decidim-pokecode", github: "openpoke/decidim-module-pokecode", branch: "release/0.31-stable"
 gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.31-stable"
 
 gem "bootsnap", "~> 1.7"

@@ -33,7 +33,8 @@
     "jsrender": "^1.0.15",
     "leaflet.featuregroup.subgroup": "^1.0.2",
     "tom-select": "^2.4.3",
-    "workbox-webpack-plugin": "^7.4.1"
+    "workbox-webpack-plugin": "^7.4.1",
+    "shakapacker": "8.3.0"
   },
   "version": "0.1.0",
   "browserslist": [
@@ -45,6 +46,6 @@
     "@decidim/prettier-config": "file:packages/prettier-config",
     "@decidim/stylelint-config": "file:packages/stylelint-config",
     "@tarekraafat/autocomplete.js": "^10.2.7",
-    "shakapacker": "^8.3.0"
+    "shakapacker": "8.3.0"
   }
 }
